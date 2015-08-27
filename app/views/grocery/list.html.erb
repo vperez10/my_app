@@ -1,3 +1,15 @@
 <h1> Grocery List </h1>
 
-LIST
+Grocery List
+<!-- show list of stores -->
+<ul>
+  <% @groceries.each do |grocery| %>
+  <table>
+    <tr>
+      <td> <%= grocery.name %> </td>
+      <td> <%= grocery.address %> </td>
+      <td> <%= grocery.type %> </td>
+    </tr>
+  </table>
+  <% end %>
+</ul>

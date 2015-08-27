@@ -6,10 +6,10 @@ def index
 
 def add
      @store = Store.new
-    @store.first_name = params[:first_name]
-    @store.last_name = params[:last_name]
-    @store.email = params[:email]
-    @store.password = params[:password]
+    @store.name = params[:name]
+    @store.address = params[:address]
+    @store.type = params[:type]
+    @store.hours = params[:hours]
 
     @store.save
 
@@ -22,7 +22,7 @@ def update
 
   def view
     # all the stores
-    @store = Store.all
+    @stores = Store.all
     render "view"
   end
 end

@@ -1,15 +1,17 @@
 class GroceryController < ApplicationController
 
-def home
-  render "home"
+def login
+  render "login"
   end
 
-def stores
-  render "stores"
+def home
+  render "home"
 end
 
 def list
-  render "list"
+  # all the stores
+    @groceries = AdditionalItems.all
+    render "list"
 end
 
 def add
@@ -18,10 +20,6 @@ end
 
 def edit
   render "edit"
-end
-
-def groceries
-  render "groceries"
 end
 
 end
