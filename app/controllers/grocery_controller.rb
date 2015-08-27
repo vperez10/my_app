@@ -16,9 +16,10 @@ def add
   render "add"
 end
 
-def repeat
-  render "repeat"
+def edit
+  render "edit"
 end
+
 def groceries
   render "groceries"
 end

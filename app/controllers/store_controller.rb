@@ -1,14 +1,16 @@
 class StoreController < ApplicationController
 
-def stores
-  render "stores"
+def index
+  @store = Store.all
   end
 
 def update
   render "update"
   end
 
-def view
-  render "view"
+  def view
+    # all the stores
+    @store = Store.all
+    render "view"
   end
 end
