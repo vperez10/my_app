@@ -7,6 +7,7 @@ get("/groceryrepeat", { :controller => "grocery", :action => "repeat" })
 
 get("/stores", { :controller => "store", :action => "stores" })
 get("/storesupdate", { :controller => "store", :action => "update" })
+get("/storesview", { :controller => "store", :action => "view" })
 
 get("/login", { :controller => "customer", :action => "login" })
 get("/home", { :controller => "customer", :action => "home" })

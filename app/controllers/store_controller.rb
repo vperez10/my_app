@@ -7,4 +7,8 @@ def stores
 def update
   render "update"
   end
+
+def view
+  render "view"
+  end
 end
