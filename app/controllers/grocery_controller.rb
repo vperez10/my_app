@@ -10,7 +10,7 @@ end
 
 def list
   # all the stores
-    @groceries = AdditionalItems.all
+    @groceries = AdditionalItem.all + RepeatItem.all
     render "list"
 end
 

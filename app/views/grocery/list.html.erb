@@ -6,9 +6,10 @@ Grocery List
   <% @groceries.each do |grocery| %>
   <table>
     <tr>
-      <td> <%= grocery.name %> </td>
-      <td> <%= grocery.address %> </td>
-      <td> <%= grocery.type %> </td>
+      <td> <%= grocery.item %> </td>
+      <td> <%= grocery.quantity %> </td>
+      <td> <%= grocery.expected_cost %> </td>
+      <td> <%= grocery.store_id %> </td>
     </tr>
   </table>
   <% end %>

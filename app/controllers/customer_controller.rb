@@ -1,12 +1,23 @@
 class CustomerController < ApplicationController
 
 def home
+#     # find user by params[:email]
+#     # check if password matches
+#     # login user (session[:user_id] = user.id)
+# redirect_to root as a signed in user
   render "home"
   end
 
+# #   SessionsController
+#   def create
+#     # find user by params[:email]
+#     # check if password matches
+#     # login user (session[:user_id] = user.id)
+#   end
+
 def login
   render "login"
-  end
+end
 
 def register
   @customer = Customer.new
@@ -16,6 +27,7 @@ def register
     @customer.password = params[:password]
 
     @customer.save
+    # redirect_to ___
   end
 
 end

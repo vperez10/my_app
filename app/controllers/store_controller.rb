@@ -13,11 +13,11 @@ def add
 
     @store.save
 
-    render("index")
+    render("add")
 end
 
 def update
-  @store = Store.find(params[:id])
+  render "update"
   end
 
   def view

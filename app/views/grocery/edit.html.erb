@@ -1,3 +1,20 @@
 <h1> Add/Delete Repeat Items </h1>
 
-LIST items
+<form action="/grocery/list">
+  <fieldset>
+    <legend>Grocery:</legend>
+    Item:<br>
+    <input type="text" name="additional_item" value="Item">
+    <br>
+    Quantity:<br>
+    <input type="integer" name="quantity" value="Quantity">
+    <br>
+    Expected Cost:<br>
+    <input type="integer" name="expected_cost" value="Cost">
+    <br>
+    Store:<br>
+    <input type="integer" name="store_id" value="Store ID">
+    <br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
