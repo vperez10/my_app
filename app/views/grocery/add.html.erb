@@ -1,3 +1,18 @@
-<h1> Add Special Item </h1>
+<h1 align="center"> Add Special Item </h1>
 
-LIST Special Item
+<form action="/grocery/list" align="center">
+  <fieldset>
+    <legend>What is the new item you'd like to add?</legend>
+    Item:<br>
+    <input type="text" name="item" value="Item name">
+    <br>
+    Quantity:<br>
+    <input type="integer" name="quantity" value="Desired quantity">
+    <br>
+    Expected Cost:<br>
+    <input type="decimal" name="expected_cost" value="Expected Cost">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>

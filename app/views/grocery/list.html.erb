@@ -1,10 +1,7 @@
-<h1> Grocery List </h1>
+<h1 align="center"> Grocery List </h1>
 
-Grocery List
-<!-- show list of stores -->
-<ul>
   <% @groceries.each do |grocery| %>
-  <table>
+  <table align="center">
     <tr>
       <td> <%= grocery.item %> </td>
       <td> <%= grocery.quantity %> </td>
@@ -13,4 +10,4 @@ Grocery List
     </tr>
   </table>
   <% end %>
-</ul>
+

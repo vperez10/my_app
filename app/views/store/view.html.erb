@@ -1,10 +1,8 @@
-<h1> View Stores </h1>
+<h1 align="center"> View Stores </h1>
 
-List Stores
-<!-- show list of stores -->
-<ul>
+
   <% @stores.each do |store| %>
-  <table>
+  <table align="center">
     <tr>
       <td> <%= store.name %> </td>
       <td> <%= store.address %> </td>
@@ -12,4 +10,4 @@ List Stores
     </tr>
   </table>
   <% end %>
-</ul>
+
