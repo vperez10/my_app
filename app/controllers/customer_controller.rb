@@ -1,4 +1,5 @@
 class CustomerController < ApplicationController
+before_action :authenticate_user!
 
 def home
 #     # find user by params[:email]

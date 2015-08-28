@@ -3,6 +3,7 @@ devise_for :users
 
 get("/grocery/list", { :controller => "grocery", :action => "list" })
 get("/grocery/add", { :controller => "grocery", :action => "add" })
+post("/grocery/create", { :controller => "grocery", :action => "create" })
 get("/grocery/edit", { :controller => "grocery", :action => "edit" })
 get("/grocery/home", { :controller => "grocery", :action => "home" })
 
