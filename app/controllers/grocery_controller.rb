@@ -29,7 +29,11 @@ def create
 end
 
 def edit
-  render "edit"
+  @groceries=AdditionalItem.find_by(:item =>params["item"])
+end
+
+def update
+  @groceries=AdditionalItem.find_by(:item =>params["item"])
 end
 
 end

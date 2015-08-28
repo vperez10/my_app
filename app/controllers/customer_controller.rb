@@ -1,5 +1,6 @@
 class CustomerController < ApplicationController
 before_action :authenticate_user!
+skip_before_filter :verify_authenticity_token
 
 def home
 #     # find user by params[:email]

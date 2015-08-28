@@ -5,6 +5,7 @@ get("/grocery/list", { :controller => "grocery", :action => "list" })
 get("/grocery/add", { :controller => "grocery", :action => "add" })
 post("/grocery/create", { :controller => "grocery", :action => "create" })
 get("/grocery/edit", { :controller => "grocery", :action => "edit" })
+get("/grocery/update/:id", { :controller => "grocery", :action => "update" })
 
 get("/stores/add", { :controller => "store", :action => "add" })
 post("/stores/create", { :controller => "store", :action => "create" })
