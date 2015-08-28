@@ -5,7 +5,6 @@ get("/grocery/list", { :controller => "grocery", :action => "list" })
 get("/grocery/add", { :controller => "grocery", :action => "add" })
 post("/grocery/create", { :controller => "grocery", :action => "create" })
 get("/grocery/edit", { :controller => "grocery", :action => "edit" })
-get("/grocery/home", { :controller => "grocery", :action => "home" })
 
 get("/stores/add", { :controller => "store", :action => "add" })
 post("/stores/create", { :controller => "store", :action => "create" })
@@ -16,5 +15,5 @@ get("/stores", { :controller => "store", :action => "index" })
 get("/login", { :controller => "customer", :action => "login" })
 get("/home", { :controller => "customer", :action => "home" })
 
-get("/", { :controller => "grocery", :action => "login" })
+get("/", { :controller => "grocery", :action => "home" })
 end
