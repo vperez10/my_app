@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+devise_for :users
 
 get("/grocery/list", { :controller => "grocery", :action => "list" })
 get("/grocery/add", { :controller => "grocery", :action => "add" })
@@ -6,6 +7,7 @@ get("/grocery/edit", { :controller => "grocery", :action => "edit" })
 get("/grocery/home", { :controller => "grocery", :action => "home" })
 
 get("/stores/add", { :controller => "store", :action => "add" })
+post("/stores/create", { :controller => "store", :action => "create" })
 get("/stores/update/:id", { :controller => "store", :action => "update" })
 get("/stores/view", { :controller => "store", :action => "view" })
 get("/stores", { :controller => "store", :action => "index" })

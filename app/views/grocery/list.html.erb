@@ -1,13 +1,13 @@
 <h1 align="center"> Grocery List </h1>
 
   <% @groceries.each do |grocery| %>
-  <table align="center">
-    <tr>
-      <td> <%= grocery.item %> </td>
-      <td> <%= grocery.quantity %> </td>
-      <td> <%= grocery.expected_cost %> </td>
-      <td> <%= grocery.store_id %> </td>
-    </tr>
-  </table>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-2"> <%= grocery.item %> </div>
+        <div class="col-sm-2"> <%= grocery.quantity %> </div>
+        <div class="col-sm-2"> <%= grocery.expected_cost %> </div>
+        <div class="col-sm-2"> <%= grocery.store_id %> </div>
+    </div>
+</div>
   <% end %>
 

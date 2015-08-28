@@ -2,12 +2,13 @@
 
 
   <% @stores.each do |store| %>
-  <table align="center">
-    <tr>
-      <td> <%= store.name %> </td>
-      <td> <%= store.address %> </td>
-      <td> <%= store.type %> </td>
-    </tr>
-  </table>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-2"> <%= store.name %> </div>
+        <div class="col-sm-2"> <%= store.address %> </div>
+        <div class="col-sm-2"> <%= store.type %> </div>
+        <div class="col-sm-2"> <%= store.hours %> </div>
+    </div>
+</div>
   <% end %>
 
